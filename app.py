@@ -58,6 +58,3 @@ chart_data = pd.DataFrame({
 })
 st.bar_chart(chart_data.set_index('Metric'))
 
-# 7. "AI Consultant" Advice
-st.info(" **AI Tip:** Our model shows that **TikTok** has the highest ROI coefficient (4.33). "
-        "Consider shifting more budget there to maximize profit!")
