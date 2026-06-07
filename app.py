@@ -11,7 +11,7 @@ def load_model():
 model = load_model()
 
 # 2. App Title & Description
-st.title("💰 AI Marketing Optimizer")
+st.title(" AI Marketing Optimizer")
 st.write("""
 **Stop guessing your ad budget.** Enter your planned spend for each channel, and this AI will predict your revenue 
 based on historical performance data.
@@ -43,11 +43,11 @@ st.markdown("---")
 col1, col2 = st.columns(2)
 
 with col1:
-    st.subheader("🔮 Predicted Revenue")
+    st.subheader(" Predicted Revenue")
     st.metric(label="Revenue", value=f"${prediction:,.2f}", delta=f"ROI: {roi:.1f}%")
 
 with col2:
-    st.subheader("💸 Total Cost")
+    st.subheader(" Total Cost")
     st.metric(label="Ad Spend", value=f"${total_spend:,.2f}")
 
 # 6. Visualization
@@ -59,5 +59,5 @@ chart_data = pd.DataFrame({
 st.bar_chart(chart_data.set_index('Metric'))
 
 # 7. "AI Consultant" Advice
-st.info("💡 **AI Tip:** Our model shows that **TikTok** has the highest ROI coefficient (4.33). "
+st.info(" **AI Tip:** Our model shows that **TikTok** has the highest ROI coefficient (4.33). "
         "Consider shifting more budget there to maximize profit!")
